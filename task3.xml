@@ -1,0 +1,46 @@
+<products>
+<product>
+    <id>1</id>
+	<name>john_doe</name>
+	<address>
+	 <flat></flat>
+	 <hous>H#38</hous>
+	 <rode>R#3</rode>
+	 <area>Banani</area>
+	 <location>Dhaka</location>
+
+	</address>
+	
+	<depaetmen>sales</depaetmen>
+	<salary>$20000</salary>
+</product>
+<product>
+    <id>2</id>
+	<name>Mark_zuckerberg</name>
+	<address>
+	 <flat>A/1</flat>
+	 <hous>H#20</hous>
+	 <rode>R#18</rode>
+	 <area>Mirpur</area>
+	 <location>Dhaka</location>
+
+	</address>
+	<depaetmen>sales</depaetmen>
+	<salary>$12000</salary>
+</product>
+<product>
+    <id>3</id>
+	<name>aia_voski</name>
+	<address>
+	 <flat></flat>
+	 <hous>H#38</hous>
+	 <rode>R#3</rode>
+	 <area>MOtijhe</area>
+	 <location></location>
+
+	</address>
+	<depaetmen>sales</depaetmen>
+	<salary>$30000</salary>
+</product>
+
+</products>

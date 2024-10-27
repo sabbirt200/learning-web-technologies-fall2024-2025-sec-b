@@ -1,0 +1,34 @@
+<products>
+<product>
+    <sl_no>23</sl_no>
+	<name>john_carter</name>
+	   <admiiission_date>
+	     <day>25</day>
+		 <month>12</month>
+		 <year>2015</year>
+	   
+	   </admiiission_date>
+	
+</product>
+<product>
+    <sl_no>29</sl_no>
+	<name>bob_marsha</name>
+	   <admiiission_date>
+	     <day>3</day>
+		 <month>01</month>
+		 <year>1999</year>
+	   
+	   </admiiission_date>
+	
+</product>
+<product>
+    <sl_no>35</sl_no>
+	<name>clark_kent</name>
+	   <admiiission_date>
+	     <day>17</day>
+		 <month>06</month>
+		 <year>2005</year>
+	   
+	   </admiiission_date>
+</product>
+</products>
