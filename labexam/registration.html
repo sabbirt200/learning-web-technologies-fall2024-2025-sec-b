@@ -1,0 +1,38 @@
+
+<html>
+<head>
+    <title>
+        Registration
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="registration.php" method="post">
+            <fieldset>
+                <legend>REGISTRATION</legend>
+                <label>Id</label><br>
+                <input type="text" name="id" required><br>
+
+                <label>Password</label><br>
+                <input type="password" name="password" required><br>
+
+                <label>Confirm Password</label><br>
+                <input type="password" name="confirm_password" required><br>
+
+                <label>Name</label><br>
+                <input type="text" name="name" required><br>
+
+                <label>User Type</label><br>
+                <input type="radio" name="user_type" value="User" required> User
+                <input type="radio" name="user_type" value="Admin" required> Admin<br><br>
+
+                <div class="buttons">
+                    <input type="submit" value="Sign Up">
+                    <a href="login.html">Sign In</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
