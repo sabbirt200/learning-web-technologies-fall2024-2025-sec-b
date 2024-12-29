@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .menu {
+            border: 1px solid black;
+            width: 200px;
+            padding: 10px;
+        }
+        .menu h2 {
+            text-align: center;
+        }
+        .menu a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 5px 0;
+            border-bottom: 1px solid gray;
+        }
+        .menu a:last-child {
+            border-bottom: none;
+        }
+        .menu a:hover {
+            background-color: #f0f0f0;
+        }
+        .actions button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .actions .dashboard {
+            background-color: #28a745;
+            color:  #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h2>User Menu</h2>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#view-plants">View Plants</a>
+        <a href="#my-cart">My Cart</a>
+        <a href="#order-history">Order History</a>
+        <a href="#settings">Settings</a>
+        <a href="#edit-profile">Edit Profile</a>
+    </div>
+</body>
+</html>

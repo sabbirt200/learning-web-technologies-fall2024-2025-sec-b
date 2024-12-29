@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 300px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .account {
+            margin-bottom: 15px;
+        }
+        .account label {
+            font-weight: normal;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Signup</h2>
+        <form action="signup.php" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="repassword">Re-enter Password</label>
+            <input type="password" id="repassword" name="repassword" required>
+
+            <div class="account">
+                <label>Account</label>
+                <input type="radio" id="admin" name="account" value="Admin" required>
+                <label for="admin">Admin</label>
+                <input type="radio" id="user" name="account" value="User" required>
+                <label for="user">User</label>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Signup</button>
+                <a href="signin.html">Signin</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
