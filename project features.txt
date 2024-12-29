@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 300px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .account {
+            margin-bottom: 15px;
+        }
+        .account label {
+            font-weight: normal;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+            align-self: center;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Signup</h2>
+        <form action="signup.php" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="repassword">Re-enter Password</label>
+            <input type="password" id="repassword" name="repassword" required>
+
+            <div class="account">
+                <label>Account</label>
+                <input type="radio" id="admin" name="account" value="Admin" required>
+                <label for="admin">Admin</label>
+                <input type="radio" id="user" name="account" value="User" required>
+                <label for="user">User</label>
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Signup</button>
+                <a href="signin.html">Signin</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+..................
+
+
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        .container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .container input[type="text"], 
+        .container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #007BFF;
+        }
+        .container a:hover {
+            text-decoration: underline;
+        }
+        .container button {
+            width: 100%;
+            padding: 10px;
+            margin: 20px 0;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .container button:hover {
+            background-color: #0056b3;
+        }
+        .signup {
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign In</h2>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <div style="text-align: right;">
+            <a href="#">Forgot password?</a>
+        </div>
+        <button>Sign In</button>
+        <div class="signup">
+            Don't have an account? <a href="#">Sign up</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+.................................
+
+
+
+
+
+<html>
+<head>
+    <title>Change Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            width: 300px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Change Password</h2>
+        <form action="change_password.php" method="post">
+            <label for="previous_password">Previous Password</label>
+            <input type="password" id="previous_password" name="previous_password" required>
+
+            <label for="new_password">New Password</label>
+            <input type="password" id="new_password" name="new_password" required>
+
+            <label for="confirm_new_password">Confirm New Password</label>
+            <input type="password" id="confirm_new_password" name="confirm_new_password" required>
+
+            <button type="submit">Change Password</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+.............................................
+
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .menu {
+            border: 1px solid black;
+            width: 200px;
+            padding: 10px;
+        }
+        .menu h2 {
+            text-align: center;
+        }
+        .menu a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 5px 0;
+            border-bottom: 1px solid gray;
+        }
+        .menu a:last-child {
+            border-bottom: none;
+        }
+        .menu a:hover {
+            background-color: #f0f0f0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h2>User Menu</h2>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#view-plants">View Plants</a>
+        <a href="#my-cart">My Cart</a>
+        <a href="#order-history">Order History</a>
+        <a href="#settings">Settings</a>
+        <a href="#edit-profile">Edit Profile</a>
+    </div>
+</body>
+</html>
+
+
+
+.................................
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;        }
+        .menu {
+            border: 1px solid black;
+            width: 200px;
+            padding: 10px;
+            margin: 20px auto;
+        }
+        .menu h2 {
+            text-align: center;
+        }
+        .menu a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 5px 0;
+            border-bottom: 1px solid gray;
+        }
+        .menu a:last-child {
+            border-bottom: none;
+        }
+        .menu a:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h2>Admin Menu</h2>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#add-plants">Add Plants</a>
+        <a href="#view-lists">View Lists</a>
+        <a href="#manage-orders">Manage Orders</a>
+        <a href="#sales-history">Sales History</a>
+        <a href="#edit-profile">Edit Profile</a>
+        <a href="#settings">Settings</a>
+    </div>
+</body>
+</html>
+
+
+
+
+.............................................
+
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 350px;
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .product-name {
+            font-size: 18px;
+        }
+        .product-price {
+            font-size: 16px;
+            color: gray;
+        }
+        .actions {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .actions button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .actions .buy {
+            background-color: #28a745;
+            color: white;
+        }
+        .actions .add-cart {
+            background-color: #007bff;
+            color: white;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .payment-method {
+            margin: 10px 0;
+        }
+        .payment-method label {
+            margin-right: 10px;
+        }
+        button.place-order {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button.place-order:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Buy</h2>
+        <div class="product">
+            <span class="product-name">Plant</span>
+            <span class="product-price">$10</span>
+        </div>
+        <div class="actions">
+            <button class="buy">Buy</button>
+            <button class="add-cart">Add to Cart</button>
+        </div>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="1" value="1">
+        <label for="address">Address:</label>
+        <input type="text" id="address" placeholder="Enter your address">
+        <div class="payment-method">
+            <span>Payment Method:</span>
+            <label><input type="radio" name="payment" value="cash" checked> Cash</label>
+            <label><input type="radio" name="payment" value="online"> Online</label>
+        </div>
+        <button class="place-order">Place Order</button>
+    </div>
+</body>
+</html>
